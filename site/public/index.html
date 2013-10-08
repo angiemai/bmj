@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <title>Contacts</title>
+    <meta name="viewport" content="width=device-width" />
+  
+        <link href="css/jquery-ui.min.css" rel="stylesheet" />
+        <link href="css/jquery.jqplot.css" rel="stylesheet" />
+        <link href="css/jquery.mobile-1.1.2.css" rel="stylesheet" />
+        <link href="css/jquery.mobile-1.1.2.min.css" rel="stylesheet" />
+        <link href="css/jquery.mobile.structure-1.1.2.css" rel="stylesheet" />
+        <link href="css/jquery.mobile.structure-1.1.2.min.css" rel="stylesheet" />
+        <link href="css/jquery.mobile.theme-1.1.2.css" rel="stylesheet" />
+        <link href="css/jquery.mobile.theme-1.1.2.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.accordion.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.autocomplete.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.button.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.core.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.datepicker.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.dialog.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.progressbar.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.resizable.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.selectable.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.slider.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.tabs.min.css" rel="stylesheet" />
+        <link href="css/jquery.ui.theme.min.css" rel="stylesheet" />
+        <link href="css/Site.css" rel="stylesheet" />
+        <link href="css/Site.Mobile.css" rel="stylesheet" />
+
+
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery-1.8.2.intellisense.js"></script>
+        <script src="js/jquery-1.8.2.js"></script>
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery-ui-1.8.24.js"></script>
+        <script src="js/jquery-ui-1.8.24.min.js"></script>
+        <script src="js/jquery.jqplot.min.js"></script>
+        <script src="js/jquery.mobile-1.1.0.min.js"></script>
+        <script src="js/jquery.mobile-1.1.2.js"></script>
+        <script src="js/jquery.mobile-1.1.2.min.js"></script>
+        <script src="js/jquery.unobtrusive-ajax.js"></script>
+        <script src="js/jquery.unobtrusive-ajax.min.js"></script>
+        <script src="js/jquery.validate-vsdoc.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.validate.unobtrusive.js"></script>
+        <script src="js/jquery.validate.unobtrusive.min.js"></script>
+        <script src="js/knockout-2.2.0.debug.js"></script>
+        <script src="js/knockout-2.2.0.js"></script>
+        <script src="js/modernizr-2.6.2.js"></script>
+
+
+        $(document).ready(function ()
+        {
+            $.mobile.ajaxEnabled = false;
+        });
+   
+</head>
+<body>
+    <div data-role="page" data-theme="c">
+         
+        <div data-role="header">
+            <h1>Contacts</h1>
+
+    <div data-role="button" data-icon="plus" class="ui-btn-right">
+        <a href="/Contact/Create">New</a>
+    </div>
+
+        </div>
+          <div  data-role="header" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+            <li><a href="/">Home</a></li>
+            <li><a data-transition="slidedown" href="/Contact/Graph?Length=7">Graph</a></li>
+            <li><a data-transition="pop" href="/Contact/Info?Length=7">Information</a></li> 
+       	</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+        <div data-role="content">
+            
+            
+                  <a HREF="javascript:history.go(0)">Click to refresh the page</a>
+ 
+<ul data-role="listview" data-inset="true">
+     <li data-role="list-divider">02/10/2013 </li>
+        <li>
+          <a href="/Contact/Details/25" >
+                <span style="color:red"> 15:34</span> 
+                Systolic: <span style="color:blue">110</span>    Diastolic <span style="color:blue">62</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">01/10/2013 </li>
+        <li>
+          <a href="/Contact/Details/26" >
+                <span style="color:red"> 16:46</span> 
+                Systolic: <span style="color:blue">135</span>    Diastolic <span style="color:blue">58</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">30/09/2013 </li>
+     <li data-role="list-divider">29/09/2013 </li>
+     <li data-role="list-divider">28/09/2013 </li>
+     <li data-role="list-divider">27/09/2013 </li>
+     <li data-role="list-divider">26/09/2013 </li>
+        <li>
+          <a href="/Contact/Details/24" >
+                <span style="color:red"> 13:08</span> 
+                Systolic: <span style="color:blue">111</span>    Diastolic <span style="color:blue">58</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">25/09/2013 </li>
+        <li>
+          <a href="/Contact/Details/19" >
+                <span style="color:red"> 16:35</span> 
+                Systolic: <span style="color:blue">177</span>    Diastolic <span style="color:blue">50</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/20" >
+                <span style="color:red"> 16:40</span> 
+                Systolic: <span style="color:blue">177</span>    Diastolic <span style="color:blue">55</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/23" >
+                <span style="color:red"> 11:50</span> 
+                Systolic: <span style="color:blue">180</span>    Diastolic <span style="color:blue">99</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">24/09/2013 </li>
+        <li>
+          <a href="/Contact/Details/1" >
+                <span style="color:red"> 12:01</span> 
+                Systolic: <span style="color:blue">165</span>    Diastolic <span style="color:blue">45</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/2" >
+                <span style="color:red"> 12:04</span> 
+                Systolic: <span style="color:blue">165</span>    Diastolic <span style="color:blue">47</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/3" >
+                <span style="color:red"> 18:05</span> 
+                Systolic: <span style="color:blue">175</span>    Diastolic <span style="color:blue">49</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/4" >
+                <span style="color:red"> 18:12</span> 
+                Systolic: <span style="color:blue">185</span>    Diastolic <span style="color:blue">48</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">23/09/2013 </li>
+        <li>
+          <a href="/Contact/Details/5" >
+                <span style="color:red"> 12:01</span> 
+                Systolic: <span style="color:blue">195</span>    Diastolic <span style="color:blue">55</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/7" >
+                <span style="color:red"> 18:05</span> 
+                Systolic: <span style="color:blue">175</span>    Diastolic <span style="color:blue">45</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/8" >
+                <span style="color:red"> 18:12</span> 
+                Systolic: <span style="color:blue">185</span>    Diastolic <span style="color:blue">49</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">22/09/2013 </li>
+        <li>
+          <a href="/Contact/Details/9" >
+                <span style="color:red"> 12:01</span> 
+                Systolic: <span style="color:blue">70</span>    Diastolic <span style="color:blue">41</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/10" >
+                <span style="color:red"> 12:04</span> 
+                Systolic: <span style="color:blue">45</span>    Diastolic <span style="color:blue">43</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/11" >
+                <span style="color:red"> 18:05</span> 
+                Systolic: <span style="color:blue">45</span>    Diastolic <span style="color:blue">40</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/12" >
+                <span style="color:red"> 18:12</span> 
+                Systolic: <span style="color:blue">45</span>    Diastolic <span style="color:blue">44</span>
+           
+              </a>
+        </li>
+     <li data-role="list-divider">21/09/2013 </li>
+        <li>
+          <a href="/Contact/Details/13" >
+                <span style="color:red"> 12:01</span> 
+                Systolic: <span style="color:blue">145</span>    Diastolic <span style="color:blue">44</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/14" >
+                <span style="color:red"> 12:04</span> 
+                Systolic: <span style="color:blue">45</span>    Diastolic <span style="color:blue">42</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/15" >
+                <span style="color:red"> 18:05</span> 
+                Systolic: <span style="color:blue">45</span>    Diastolic <span style="color:blue">47</span>
+           
+              </a>
+        </li>
+        <li>
+          <a href="/Contact/Details/16" >
+                <span style="color:red"> 18:12</span> 
+                Systolic: <span style="color:blue">45</span>    Diastolic <span style="color:blue">41</span>
+           
+              </a>
+        </li>
+</ul>
+
+</div>
+
+        </div>
+   
+</body>
+</html>
